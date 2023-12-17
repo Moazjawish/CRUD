@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css File  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap Links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <h1>CRUD</h1>
+    <!-- Form Start -->
+    <div class="form" onsubmit="return false;">
+      <div class="inputs_container row align-items-center justify-content-center">
+        <!-- 1 -->
+        <div class="col-auto col-lg-2  my-1">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control FirstName"
+              placeholder="First Name"
+              maxlength="10"
+            />
+          </div>
+          <p class="error_msg">please Enter your First name</p>
+        </div>
+        <!-- 2 -->
+        <div class="col-auto col-lg-2  my-1">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control SecondName"
+              placeholder="Second name"
+              maxlength="10"
+            />
+          </div>
+          <p class="error_msg">please Enter your Second name</p>
+        </div>
+        <!-- 3 -->
+        <div class="col-auto col-lg-2  my-1">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control Age"
+              placeholder="Age"
+              maxlength="3"
+            />
+          </div>
+          <p class="error_msg">please Enter your age</p>
+        </div>
+        <!-- 4 -->
+        <div class="col-auto col-lg-2  my-1">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control Position"
+              placeholder="Position"
+              maxlength="20"
+            />
+          </div>
+          <p class="error_msg">please Enter your position</p>
+        </div>
+
+        <div class="col-auto col-lg-1 my-1">
+        <button class="btn btn-primary add">Add </button>
+        <button class="btn btn-success submit">submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Form End -->
+    <!-- Employees details Start -->
+    <div class="employees_details">
+      <div class="container">
+      </div>
+    </div>
+    <!-- Employees details End -->
+    <script src="../Js/main.js"></script>
+  </body>
+</html>

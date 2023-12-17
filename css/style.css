@@ -1,0 +1,128 @@
+body
+{
+    text-align: center !important;
+    background-image: url(../images/andras-vas-Bd7gNnWJBkU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row
+{    
+    margin: 20px auto  !important;
+    align-items: center !important;
+}
+.col-auto
+{
+    width:-webkit-fill-available !important;
+}
+
+h1
+{
+    position: relative;
+    font-weight: normal;
+    margin: -10px auto 56px;
+    color: #c8bdbd;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 150px !important;
+    margin-bottom: 100px !important;
+    font-family: none;
+}
+h1::before
+{
+    content: "";
+    position: absolute;
+    background-color: #c8bdbd;
+    height: 2px;
+    width: 120px;
+    bottom: -30px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+h1::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    width: 15px;
+    height: 15px;
+    border: #c8bdbd 2px solid;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+.form-control 
+{
+    transition: 0.5s;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px white solid !important;
+    color: white !important;
+}
+
+.form-control:focus
+{
+outline: none;
+border-color: white !important;
+box-shadow: none !important;
+}
+.error_msg
+{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.submit
+{
+    visibility: hidden;
+}
+
+::placeholder { 
+    color:rgba(255, 255, 255, 0.737) !important;
+}
+
+.employees_details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.employees_details .employee
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.527);
+    max-width: 100%;
+    min-width: 1000px;
+    padding: 12px;
+    border-radius: 14px;
+    border: #c8bdbd solid 4px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: none;
+}
+
+
+@media (max-width : 1180px) {
+    .employees_details .employee
+    {
+        min-width: 500px !important; 
+    }
+    
+}
+@media (max-width : 550px)
+{
+    .employees_details .employee
+    {
+        min-width: 200px !important; 
+    }
+    
+}
